@@ -1,0 +1,16 @@
+endpoints:
+  - endpoint1: https://letterboxd.com/dave/list/official-top-250-narrative-feature-films/
+  - endpoint2: https://letterboxd.com/dave/list/official-top-250-narrative-feature-films/page/2/
+  - endpoint3: https://letterboxd.com/dave/list/official-top-250-narrative-feature-films/page/3/
+
+reviews:
+  max: 20
+
+dataset:
+  #raw: data/raw/test.csv
+  raw: data/raw/LetterboxdTop250.csv
+  processed: data/processed/sentiment_analysis.pkl
+  #processed: data/processed/test.pkl
+
+model:
+  name: cardiffnlp/twitter-roberta-base-sentiment
